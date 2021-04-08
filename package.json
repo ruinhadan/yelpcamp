@@ -1,0 +1,14 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "Project done as part of WebD course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
