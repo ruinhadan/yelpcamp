@@ -23,6 +23,7 @@ const seedDatabase = async () => {
                 const city = randomSampler(cities);
                 const price = Math.floor(Math.random() * 30) + 20;
                 const campground = new Campground({
+                        author: '60b38ffd4617d33090789986',
                         location: `${city.city}, ${city.state}`,
                         title: `${randomSampler(descriptors)} ${randomSampler(places)}`,
                         description: 'Kimi to natsu no owari, sed laip, sed song, saddddddddddddddd',
