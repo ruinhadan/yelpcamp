@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+        require('dotenv').config()
+}
+
 const mongoose = require('mongoose');
 const express = require('express');
 const path = require('path')
@@ -12,6 +16,7 @@ const flash = require('connect-flash')
 const passport = require('passport')
 const LocalStrat = require('passport-local')
 const User = require('./models/user')
+
 
 mongoose.connect('mongodb://localhost:27017/yelp-camp', {
         useNewUrlParser: true,

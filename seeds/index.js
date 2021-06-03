@@ -27,7 +27,10 @@ const seedDatabase = async () => {
                         location: `${city.city}, ${city.state}`,
                         title: `${randomSampler(descriptors)} ${randomSampler(places)}`,
                         description: 'Kimi to natsu no owari, sed laip, sed song, saddddddddddddddd',
-                        image: 'https://source.unsplash.com/collection/2257479',
+                        images: [
+                                { "url": "https://res.cloudinary.com/dkeb8gaim/image/upload/v1622737899/yelpcamp/dngwmevnm5hrwdb8ve1r.jpg", "filename": "yelpcamp/dngwmevnm5hrwdb8ve1r" },
+                                { "url": "https://res.cloudinary.com/dkeb8gaim/image/upload/v1622737901/yelpcamp/g9pb0e9cr8ocnasz4lon.jpg", "filename": "yelpcamp/g9pb0e9cr8ocnasz4lon" }
+                        ],
                         price
                 })
                 await campground.save();
