@@ -26,6 +26,7 @@ const seedDatabase = async () => {
                         author: '60b38ffd4617d33090789986',
                         location: `${city.city}, ${city.state}`,
                         title: `${randomSampler(descriptors)} ${randomSampler(places)}`,
+                        geometry: { type: 'Point', coordinates: [city.longitude, city.latitude] },
                         description: 'Kimi to natsu no owari, sed laip, sed song, saddddddddddddddd',
                         images: [
                                 { "url": "https://res.cloudinary.com/dkeb8gaim/image/upload/v1622737899/yelpcamp/dngwmevnm5hrwdb8ve1r.jpg", "filename": "yelpcamp/dngwmevnm5hrwdb8ve1r" },
